@@ -1,9 +1,7 @@
 local intervaltree = require("kong.plugins.geoip.intervaltree")
 local utils = require("kong.tools.utils")
-local lrucache = require("resty.lrucache")
 local ipconv = require("kong.plugins.geoip.iptonumber")
 local io_open = io.open
-local io_lines = io.lines
 local inflate_gzip = utils.inflate_gzip
 
 local IPRestrictionHandler = {}
